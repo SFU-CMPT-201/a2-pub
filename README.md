@@ -13,25 +13,33 @@ finish the tutorial, but there are extra instructions you need to follow.
 
 ## Extra instructions
 
-Similar to the command-line interface tutorial, there are activities at the end of each section, and
-those are the basis of your grade. However, you need to do slightly-modified activities described
-below so we can grade them more easily. This means that you do not need to do the activities from
-the tutorial itself. Of course, you need to do the activities on this VM using `nvim`. As mentioned
-before, we have configured our `nvim` so that it occasionally takes a snapshot of what you are doing
-and saves the snapshot to a directory named `.history`. For this and all future assignments, you
-need to push this directory as part of your submission. We will check this directory, analyze the
-snapshots to make sure that you are using `nvim`, and use it as part of grading. So make sure you
-always use `nvim` for this and all future assignments.
+* Just like the command-line interface tutorial, use `script` to record your what you do.
+    * Enter `script -a` before you do the tutorial. It records what you do to a file named
+      `typescript`.
+    * If you want to stop, enter `exit`, which stops recording.
+    * Next time you come back, go to the correct directory (`cd ~/units/02-tools/a2`) and enter
+      `script -a` again. It does not overwrite what you have recorded previously. It just appends to
+      the existing recording.
+* Similar to the command-line interface tutorial, there are activities at the end of each section,
+  and those are the basis of your grade. However, you need to do slightly-modified activities
+  described below so we can grade them more easily. This means that you do not need to do the
+  activities from the tutorial itself. Of course, you need to do the activities on this VM using
+  `nvim`. As mentioned before, we have configured our `nvim` so that it occasionally takes a
+  snapshot of what you are doing and saves the snapshot to a directory named `.history`. For this
+  and all future assignments, you need to push this directory as part of your submission. We will
+  check this directory, analyze the snapshots to make sure that you are using `nvim`, and use it as
+  part of grading. So make sure you always use `nvim` for this and all future assignments.
 
 ### Note
 
 It is important to note that the tutorial assumes that you are using bash. However, you're using zsh
 on our VM, which is a different shell. You can enter `which $SHELL` to find out which shell you're
-using. Zsh behaves slightly differently from bash, so when you test out commands to use for your
-bash script, it is important to do it using bash, not zsh. You can simply enter `bash` and it will
-give you a bash shell. You can enter `exit` to return to the original zsh shell. Note that we have
-configured zsh on our VM to enable many features, e.g., custom prompt, autocompletion, git support,
-etc. When you use bash, you won't have access to those features.
+using. Zsh behaves slightly differently from bash, so when you test out commands before you include
+them in your bash script, it is important to do it using bash, not zsh. You can simply enter `bash`
+and it will give you a bash shell. That way, you can test out various commands using bash. After
+you're done, enter `exit` to return to the original zsh shell. Note that we have configured zsh on
+our VM to enable many features, e.g., custom prompt, autocompletion, git support, etc. When you use
+bash, you won't have access to those features.
 
 ### Activities for `2. Variables`
 
@@ -78,9 +86,21 @@ etc. When you use bash, you won't have access to those features.
 
 ### Activities for `5. If Statements`
 
+* Create a script named `5.if.1.sh` which will take 2 numbers as command line arguments. It will
+  print to the screen the larger of the two numbers.
+* Create a script named `5.if.2.sh` which will accept a file as a command line argument and check if
+  the file is executable or writable. You should print a message with true/false for each. For
+  example, if the file is both executable and writable, the message should be `true, true`. If the
+  file is executable but not writable, the message should be `true, false`.
+
 ### Activities for `6. Loops`
 
-### Activities for `7. Functions`
+* Create a script named `6.loops.1.sh` which will print the numbers 1 - 10 (each on a separate line)
+  and whether they are even or odd. The format should be `number, even/odd` e.g., `1, odd`.
+* Write a script named `6.loops.2.sh` which will take a single command line argument (a directory)
+  and will print each entry in that directory, each on a separate line. If the entry is a file it
+  will print its size (just the size, not the file name). If the entry is a directory it will print
+  how many items are in that directory (just how many items there are, not the directory name).
 
 # Next steps
 
