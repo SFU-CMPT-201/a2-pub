@@ -13,22 +13,15 @@ finish the tutorial, but there are extra instructions you need to follow.
 
 ## Extra instructions
 
-* Just like the command-line interface tutorial, use `script` to record your what you do.
-    * Enter `script -a` before you do the tutorial. It records what you do to a file named
-      `typescript`.
-    * If you want to stop, enter `exit`, which stops recording.
-    * Next time you come back, go to the correct directory (`cd ~/units/02-tools/a2`) and enter
-      `script -a` again. It does not overwrite what you have recorded previously. It just appends to
-      the existing recording.
-* Similar to the command-line interface tutorial, there are activities at the end of each section,
-  and those are the basis of your grade. However, you need to do slightly-modified activities
-  described below so we can grade them more easily. This means that you do not need to do the
-  activities from the tutorial itself. Of course, you need to do the activities on this VM using
-  `nvim`. As mentioned before, we have configured our `nvim` so that it occasionally takes a
-  snapshot of what you are doing and saves the snapshot to a directory named `.history`. For this
-  and all future assignments, you need to push this directory as part of your submission. We will
-  check this directory, analyze the snapshots to make sure that you are using `nvim`, and use it as
-  part of grading. So make sure you always use `nvim` for this and all future assignments.
+Similar to the command-line interface tutorial, there are activities at the end of each section, and
+those are the basis of your grade. However, you need to do slightly-modified activities described
+below so we can grade them more easily. This means that you do not need to do the activities from
+the tutorial itself. Of course, you need to do the activities on this VM using `nvim`. As mentioned
+before, we have configured our `nvim` so that it occasionally takes a snapshot of what you are doing
+and saves the snapshot to a directory named `.history`. For this and all future assignments, you
+need to push this directory as part of your submission. We will check this directory, analyze the
+snapshots to make sure that you are using `nvim`, and use it as part of grading. So make sure you
+always use `nvim` for this and all future assignments.
 
 ### Note
 
