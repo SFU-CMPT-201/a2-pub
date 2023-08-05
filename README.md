@@ -47,8 +47,8 @@ bash, you won't have access to those features.
   then it will select from only words with that many characters. Look at the tutorial's activity
   description for a hint.
 * Create a script named `2.variables.3.sh` which will take a filename as its first argument and
-  create a dated copy of the file. eg. if our file was named file1.txt it would create a copy such
-  as 2023-08-02_file1.txt. (To achieve this you will probably want to play with command substitution
+  create a dated copy of the file. eg. if our file was named file1.txt it would create a copy named
+  2023-08-02_file1.txt. (To achieve this you will probably want to play with command substitution
   and the command `date`) 
 
 ### Activities for `3. Input`
