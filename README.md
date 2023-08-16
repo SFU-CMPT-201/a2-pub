@@ -1,4 +1,4 @@
-# Bash scripting
+# Assignment 2: Bash scripting
 
 A bash script is something that you will encounter quite frequently when you use Linux. You can
 think of it as a task automation tool---it allows you to create a single command that executes
@@ -23,7 +23,7 @@ you need to push this directory as part of your submission. We will check this d
 the snapshots to make sure that you are using `nvim`, and use the analysis results as part of
 grading. So make sure you always use `nvim` for this and all future assignments.
 
-### Note
+### Using bash
 
 It is important to note that the tutorial assumes that you are using bash. However, you're using zsh
 on our VM, which is a different shell. You can enter `which $SHELL` to find out which shell you're
@@ -33,6 +33,16 @@ simply enter `bash` and it will give you a bash shell. That way, you can test ou
 using bash. After you're done, enter `exit` to return to the original zsh shell. Note that we have
 configured zsh on our VM to enable many features, e.g., custom prompt, autocompletion, git support,
 etc. When you use bash, you won't have access to those features.
+
+### Neovim linter for bash
+
+As you write bash scripts using our Neovim, you will notice that it shows various suggestions. This
+is because we have installed a *linter* called [ShellCheck](https://www.shellcheck.net/). A linter
+is a program that analyzes code and reports errors, bugs, and suggestions. It is a very common
+programming tool and you are highly encouraged to use it for all programming tasks, regardless of
+the language you use. Using a linter, you can learn a lot about writing clean and reliable code and
+following best practices. In fact, we have installed Neovim linters for C/C++ as well, as you will
+see in later assignments.
 
 ### Activities for `2. Variables`
 
@@ -49,7 +59,7 @@ etc. When you use bash, you won't have access to those features.
 * Create a script named `2.variables.3.sh` which will take a filename as its first argument and
   create a dated copy of the file. eg. if our file was named file1.txt it would create a copy named
   2023-08-02_file1.txt. (To achieve this you will probably want to play with command substitution
-  and the command `date`) 
+  and the command `date`)
 
 ### Activities for `3. Input`
 
@@ -60,7 +70,7 @@ etc. When you use bash, you won't have access to those features.
 * Add to the previous script to add in two command command line arguments and two system variables,
   `$TERM` and `$PWD`. The message format should be `$TERM, $PWD, <first name> <last name>,
   <address>`. The script name should be `3.input.2.sh`.
-* Create a script named `3.input.3.sh` which will take data from STDIN and print the 3rd line only. 
+* Create a script named `3.input.3.sh` which will take data from STDIN and print the 3rd line only.
 
 ### Activities for `4. Arithmetic`
 
