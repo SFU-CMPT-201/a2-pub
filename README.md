@@ -13,15 +13,17 @@ finish the tutorial, but there are extra instructions you need to follow.
 
 ## Extra instructions
 
-Similar to the command-line interface tutorial, there are activities at the end of each section, and
-those are the basis of your grade. However, you need to do slightly-modified activities described
-below so we can grade them more easily. This means that you do not need to do the activities from
-the tutorial itself. Of course, you need to do the activities on this VM using `nvim`. As mentioned
-before, we have configured our `nvim` so that it occasionally takes a snapshot of the file you are
-editing and saves the snapshot to a directory named `.history`. For this and all future assignments,
-you need to push this directory as part of your submission. We will check this directory, analyze
-the snapshots to make sure that you are using `nvim`, and use the analysis results as part of
-grading. So make sure you always use `nvim` for this and all future assignments.
+Similar to the command-line interface tutorial, there are activities described at the end of each
+section and those are the basis of your grade. However, we have made slight modifications to these
+activities for easier grading. As a result, you need to complete the activities that we describe
+below, not the ones from the tutorial.
+
+Of course, you need to complete the activities using `nvim` on our VM. As mentioned before, we have
+configured our `nvim` so that it occasionally takes a snapshot of the file you are editing and saves
+the snapshot to a directory named `.nvim`. For this and all future assignments, you need to push
+this directory as part of your submission. We will check this directory, analyze the snapshots to
+make sure that you are using `nvim`, and use the analysis results as part of our grading. So make
+sure you always use `nvim` for this and all future assignments.
 
 ### Using bash
 
@@ -104,6 +106,11 @@ well, as you will see in later assignments.
   and will print each entry in that directory, each on a separate line. If the entry is a file it
   will print its size (just the size, not the file name). If the entry is a directory it will print
   how many items are in that directory (just how many items there are, not the directory name).
+
+### Submission
+
+Make sure you use git to push all the scripts you wrote and files/directories you created, including
+`.nvim/`, for grading.
 
 # Next steps
 
