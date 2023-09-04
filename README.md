@@ -41,7 +41,7 @@ etc. When you use bash, you won't have access to those features.
 As you write bash scripts using our Neovim, you will notice that it shows various suggestions. This
 is because we have installed a *linter* called [ShellCheck](https://www.shellcheck.net/). A linter
 is a program that analyzes code and reports errors, bugs, and suggestions. It is a very common
-programming tool and you are highly encouraged to use it for all programming tasks, regardless of
+programming tool and we highly encourage you to use it for all programming tasks, regardless of
 the language and the editor you use. Using a linter, you can learn a lot about writing clean and
 reliable code and following best practices. In fact, we have installed Neovim linters for C/C++ as
 well, as you will see in later assignments.
