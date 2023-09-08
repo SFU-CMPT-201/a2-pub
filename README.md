@@ -1,4 +1,4 @@
-# Assignment 2: Bash scripting
+# Assignment 2: Bash Scripting
 
 A bash script is something that you will encounter quite frequently when you use Linux. You can
 think of it as a task automation tool---it allows you to create a single command that executes
@@ -11,7 +11,7 @@ We will again use a tutorial from [Ryan's Tutorials](https://ryanstutorials.net)
 bash script tutorial is [this](https://ryanstutorials.net/bash-scripting-tutorial/). Your task is to
 finish the tutorial, but there are extra instructions you need to follow.
 
-## Extra instructions
+## Extra Instructions
 
 Similar to the command-line interface tutorial, there are activities described at the end of each
 section and those are the basis of your grade. However, we have made slight modifications to these
@@ -25,7 +25,7 @@ this directory as part of your submission. We will check this directory, analyze
 make sure that you are using `nvim`, and use the analysis results as part of our grading. So make
 sure you always use `nvim` for this and all future assignments.
 
-### Using bash
+### Using Bash
 
 It is important to note that the tutorial assumes that you are using bash. However, you're using zsh
 on our VM, which is a different shell. You can enter `which $SHELL` to find out which shell you're
@@ -36,7 +36,7 @@ using bash. After you're done, enter `exit` to return to the original zsh shell.
 configured zsh on our VM to enable many features, e.g., custom prompt, autocompletion, git support,
 etc. When you use bash, you won't have access to those features.
 
-### Neovim linter for bash
+### Neovim Linter for Bash
 
 As you write bash scripts using our Neovim, you will notice that it shows various suggestions. This
 is because we have installed a *linter* called [ShellCheck](https://www.shellcheck.net/). A linter
@@ -112,7 +112,7 @@ well, as you will see in later assignments.
 Make sure you use git to push all the scripts you wrote and files/directories you created, including
 `.nvim/`, for grading.
 
-# Next steps
+# Next Steps
 
 You need to accept the invite for the next assignment (A3).
 
