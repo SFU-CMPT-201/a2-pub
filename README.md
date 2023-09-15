@@ -52,16 +52,28 @@ well, as you will see in later assignments.
   many arguments there are and what the second argument is. The format of the output should be the
   number of arguments followed by a single space followed by the second argument. This *must* be
   your format. Otherwise, the grader will fail.
+* Create a script named `2.variables.3.sh` which will take a filename as its first argument and
+  create a dated copy of the file. For example, if our file was named file1.txt it would create a
+  copy named 2023-08-02_file1.txt. (To achieve this you will probably want to play with command
+  substitution and the command `date`)
 * Create a script named `2.variables.2.sh` which will print a random word. There is a file
   containing a list of words (usually /usr/share/dict/words or /usr/dict/words). Print a random word
-  from that file. Look at the tutorial's activity description for a hint.
+  from that file. A few hints:
+    * Look at the tutorial's activity description for a hint regarding piping that you learned from
+      A0. If you look at piping examples again, you will get an idea.
+    * Remember that you just saw `$RANDOM` in the tutorial. `$RANDOM` ranges from 0 to 32767 (`man
+      bash` will tell you) and the list of words is a lot more than 32767 words. It is okay to print
+      out a random word out of 32767 words.
+    * Remember that you also just saw command substitution in the tutorial.
 * Expand the previous activity so that if a number is supplied as the first command line argument
-  then it will select from only words with that many characters. Look at the tutorial's activity
-  description for a hint.
-* Create a script named `2.variables.3.sh` which will take a filename as its first argument and
-  create a dated copy of the file. eg. if our file was named file1.txt it would create a copy named
-  2023-08-02_file1.txt. (To achieve this you will probably want to play with command substitution
-  and the command `date`)
+  then it will select from only words with that many characters. A few hints:
+    * Look at the tutorial's activity description for a hint regarding `grep`. If you look at the
+      grep page of the Linux tutorial, especially `Regular Expresssion Overview`, you will have a
+      good set of tools to work with.
+    * You need to come up with a regular expression that detects a word with the number of
+      characters passed as the first command line argument.
+    * Recall the meanings of `^` and `$`.
+    * Think about what `[a-zA-Z]` matches.
 
 ### Activities for `3. Input`
 
@@ -69,25 +81,20 @@ well, as you will see in later assignments.
   address, and then combine these into a single message which is echo'd to the screen. The message
   format should be `<first name> <last name>, <address>`. Note that there is a comma between the
   name and the address.
-* Add to the previous script to add in two command command line arguments and two system variables,
-  `$TERM` and `$PWD`. The message format should be `$TERM, $PWD, <first name> <last name>,
-  <address>`. The script name should be `3.input.2.sh`.
-* Create a script named `3.input.3.sh` which will take data from STDIN and print the 3rd line only.
+* Create a script named `3.input.2.sh` which will take data from STDIN and print the 3rd line only.
 
 ### Activities for `4. Arithmetic`
 
 * Create a script named `4.arithmetic.1.sh` which will take two command line arguments and then
   multiply them together using each of the methods detailed above.
-* Write a Bash script named `4.arithmetic.2.sh` which will print tomorrows date. (Hint: use the
-  command `date`)
 * Remember when we looked at variables we discovered $RANDOM will return a random number. This
   number is between 0 and 32767 which is not always the most useful. Let's write a script named
-  `4.arithmetic.3.sh` which will use this variable and some arithmetic (hint: play with modulus) to
+  `4.arithmetic.2.sh` which will use this variable and some arithmetic (hint: play with modulus) to
   return a random number between 0 and 100.
 * Now let's play with the previous script. Modify it so that you can specify as a command line
   argument the upper limit of the random number. Can you make it so that a lower limit can be
   specified also? E.g. if I ran ./random.sh 10 45 it would only return random numbers between 10 and
-  45. Name this script `4.arithmetic.4.sh`.
+  45. Name this script `4.arithmetic.3.sh`.
 
 ### Activities for `5. If Statements`
 
