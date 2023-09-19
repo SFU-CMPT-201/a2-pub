@@ -28,23 +28,22 @@ sure you always use `nvim` for this and all future assignments.
 ### Using Bash
 
 It is important to note that the tutorial assumes that you are using bash. However, you're using zsh
-on our VM, which is a different shell. You can enter `which $SHELL` to find out which shell you're
-using. Zsh behaves slightly differently from bash (albeit not much), so when you test out commands
-before you include them in your bash script, it is important to do it using bash, not zsh. You can
-simply enter `bash` and it will give you a bash shell. That way, you can test out various commands
-using bash. After you're done, enter `exit` to return to the original zsh shell. Note that we have
-configured zsh on our VM to enable many features, e.g., custom prompt, autocompletion, git support,
-etc. When you use bash, you won't have access to those features.
+on our VM, which is a different shell. Zsh behaves slightly differently from bash (albeit not much),
+so when you test out commands before you include them in your bash script, it is important to do it
+using bash, not zsh. You can simply enter `bash` and it will give you a bash shell. That way, you
+can test out various commands using bash. After you're done, enter `exit` to return to the original
+zsh shell. Note that we have configured zsh on our VM to enable many features, e.g., custom prompt,
+autocompletion, git support, etc. When you use bash, you won't have access to those features.
 
 ### Neovim Linter for Bash
 
 As you write bash scripts using our Neovim, you will notice that it shows various suggestions. This
 is because we have installed a *linter* called [ShellCheck](https://www.shellcheck.net/). A linter
-is a program that analyzes code and reports errors, bugs, and suggestions. It is a very common
-programming tool and we highly encourage you to use it for all programming tasks, regardless of
-the language and the editor you use. Using a linter, you can learn a lot about writing clean and
-reliable code and following best practices. In fact, we have installed Neovim linters for C/C++ as
-well, as you will see in later assignments.
+is a program that analyzes code and reports errors and bugs, and also shows suggestions. It is a
+very common programming tool and we highly encourage you to use it for all programming tasks,
+regardless of the language and the editor you use. Using a linter, you can learn a lot about writing
+clean and reliable code and following best practices. In fact, we have installed Neovim linters for
+C/C++ as well, as you will see in later assignments.
 
 ### Activities for `2. Variables`
 
