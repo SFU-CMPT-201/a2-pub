@@ -25,6 +25,10 @@ this directory as part of your submission. We will check this directory, analyze
 make sure that you are using `nvim`, and use the analysis results as part of our grading. So make
 sure you always use `nvim` for this and all future assignments.
 
+Also, make sure that you record your entire work sessions using `record`. You need to run the
+command in the repo directory for this assignment (where you have this `README.md` file). Don't
+forget to run `exit` when you want to stop.
+
 ### Using Bash
 
 It is important to note that the tutorial assumes that you are using bash. However, you're using zsh
@@ -116,7 +120,7 @@ C/C++ as well, as you will see in later assignments.
 ### Submission
 
 Make sure you use git to push all the scripts you wrote and files/directories you created, including
-`.nvim/`, for grading.
+`.nvim/` and `.record/`, for grading.
 
 # Next Steps
 
