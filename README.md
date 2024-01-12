@@ -25,9 +25,10 @@ this directory as part of your submission. We will check this directory, analyze
 make sure that you are using `nvim`, and use the analysis results as part of our grading. So make
 sure you always use `nvim` for this and all future assignments.
 
-Also, make sure that you record your entire work sessions using `record`. You need to run the
-command in the repo directory for this assignment (where you have this `README.md` file). Don't
-forget to run `exit` when you want to stop.
+Also, make sure that you record your entire work session(s) using `record`. You need to first go to
+this assignment's repo directory (where you have this `README.md` file) and then enter `record`.
+Check that you see `[recording]` at your prompt. Don't forget to run `exit` when you want to
+stop.
 
 ### Using Bash
 
