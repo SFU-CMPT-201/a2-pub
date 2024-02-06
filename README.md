@@ -11,6 +11,12 @@ We will again use a tutorial from [Ryan's Tutorials](https://ryanstutorials.net)
 bash script tutorial is [this](https://ryanstutorials.net/bash-scripting-tutorial/). Your task is to
 finish the tutorial, but there are extra instructions you need to follow.
 
+## Important Note
+
+You ***should not*** copy and paste the code or command examples. You have to type them yourself
+and understand the meanings. If you copy and paste, you ***will not*** get any credit for this
+assignment.
+
 ## Extra Instructions
 
 Similar to the command-line interface tutorial, there are activities described at the end of each
