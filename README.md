@@ -127,11 +127,11 @@ Make sure you use git to push all the scripts you wrote and files/directories yo
 
 As with previous assignments, make sure you run `a2-checker` to check if your work is ready for
 grading. `a2-checker` performs the following.
-* It checks if you have correct recording files.
-* It checks if you have used `nvim` correctly.
-* It flags if you have copied and pasted anything.
+* It checks if you have correct recording files. You will receive a 0 if this fails.
+* It checks if you have used `nvim` correctly. You will receive a 0 if this fails.
+* It flags if you have copied and pasted anything. You will receive a 0 if this fails.
 * It performs some basic checks to see if you followed the tutorial.
-* Note that if a check fails, it does not necessarily tell you why. You need to debug it by yourself
+* Note that if a check fails, it does not always tell you why. You need to debug it by yourself
   and find out.
 * This is not a grader but if the checker says that everything is good and if you are done following
   the tutorial, you will get the full credit.
