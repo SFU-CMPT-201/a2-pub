@@ -133,7 +133,7 @@ grading. `a2-checker` performs the following.
 * It performs some basic checks to see if you followed the tutorial.
 * Note that if a check fails, it does not always tell you why. You need to debug it by yourself
   and find out.
-* This is not a grader but if the checker says that everything is good and if you are done following
+* The checker is not a grader but if it says that everything is good and if you are done following
   the tutorial, you will get the full credit.
 * It is entirely *your responsibility* to run `a3-checker` before submitting your work. If you don't
   do it, you may get an unexpected grade.
