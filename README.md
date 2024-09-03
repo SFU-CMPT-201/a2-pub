@@ -11,12 +11,6 @@ We will again use a tutorial from [Ryan's Tutorials](https://ryanstutorials.net)
 bash script tutorial is [this](https://ryanstutorials.net/bash-scripting-tutorial/). Your task is to
 finish the tutorial, but there are extra instructions you need to follow.
 
-## Important Note
-
-You ***should not*** copy and paste the code or command examples. You have to type them yourself
-and understand the meanings. If you copy and paste, you ***will not*** get any credit for this
-assignment.
-
 ## Extra Instructions
 
 Similar to the command-line interface tutorial, there are activities described at the end of each
@@ -58,17 +52,17 @@ C/C++ as well, as you will see in later assignments.
 
 ### Activities for `2. Variables`
 
-* Create a script named `2.variables.1.sh` which will accept command line arguments and echo out how
+* Create a script named `2.variables.1.sh` which accepts command line arguments and echoes out how
   many arguments there are and what the second argument is. The format of the output should be the
   number of arguments followed by a single space followed by the second argument. This *must* be
   your format. Otherwise, the grader will fail.
-* Create a script named `2.variables.3.sh` which will take a filename as its first argument and
-  create a dated copy of the file. For example, if our file was named file1.txt it would create a
-  copy named 2023-08-02_file1.txt. (To achieve this you will probably want to play with command
+* Create a script named `2.variables.3.sh` which takes a filename as its first argument and creates
+  a dated copy of the file. For example, if our file was named file1.txt it would create a copy
+  named 2023-08-02_file1.txt. (To achieve this you will probably want to play with command
   substitution and the command `date`)
-* Create a script named `2.variables.2.sh` which will print a random word. There is a file
-  containing a list of words (usually /usr/share/dict/words or /usr/dict/words). Print a random word
-  from that file. A few hints:
+* Create a script named `2.variables.2.sh` which prints a random word. There is a file containing a
+  list of words (usually /usr/share/dict/words or /usr/dict/words). Print a random word from that
+  file. A few hints:
     * Look at the tutorial's activity description for a hint regarding piping that you learned from
       A0. If you look at piping examples again, you will get an idea.
     * Remember that you just saw `$RANDOM` in the tutorial. `$RANDOM` ranges from 0 to 32767 (`man
@@ -76,7 +70,7 @@ C/C++ as well, as you will see in later assignments.
       out a random word out of 32767 words.
     * Remember that you also just saw command substitution in the tutorial.
 * Expand the previous activity so that if a number is supplied as the first command line argument
-  then it will select from only words with that many characters. A few hints:
+  then it selects from only words with that many characters. A few hints:
     * Look at the tutorial's activity description for a hint regarding `grep`. If you look at the
       grep page of the Linux tutorial, especially `Regular Expresssion Overview`, you will have a
       good set of tools to work with.
@@ -87,47 +81,62 @@ C/C++ as well, as you will see in later assignments.
 
 ### Activities for `3. Input`
 
-* Create a script named `3.input.1.sh` which will ask the user for a last name, a first name, and an
-  address, and then combine these into a single message which is echo'd to the screen. The message
-  format should be `<first name> <last name>, <address>`. Note that there is a comma between the
-  name and the address.
-* Create a script named `3.input.2.sh` which will take data from STDIN and print the 3rd line only.
+* Create a script named `3.input.1.sh` which asks the user with three separate prompts, the first
+  for a last name, the second for a first name, and the third for an address. The script should then
+  combine these into a single message which is echoed to the screen. The message format should be
+  `<first name> <last name>, <address>`. Note that there is a comma between the name and the address
+  and make sure you have the exact same spacing.
+* Create a script named `3.input.2.sh` which takes data from STDIN and prints the 3rd line only.
 
 ### Activities for `4. Arithmetic`
 
-* Create a script named `4.arithmetic.1.sh` which will take two command line arguments and then
-  multiply them together using each of the methods detailed above.
-* Remember when we looked at variables we discovered $RANDOM will return a random number. This
-  number is between 0 and 32767 which is not always the most useful. Let's write a script named
-  `4.arithmetic.2.sh` which will use this variable and some arithmetic (hint: play with modulus) to
+* Create a script named `4.arithmetic.1.sh` which takes two command line arguments and then
+  multiplies them together using each of the methods detailed above.
+* Remember when we looked at variables we discovered $RANDOM returns a random number. This number is
+  between 0 and 32767 which is not always the most useful. Let's write a script named
+  `4.arithmetic.2.sh` which uses this variable and some arithmetic (hint: play with modulus) to
   return a random number between 0 and 100.
 * Now let's play with the previous script. Modify it so that you can specify as a command line
   argument the upper limit of the random number. Can you make it so that a lower limit can be
-  specified also? E.g. if I ran ./random.sh 10 45 it would only return random numbers between 10 and
-  45. Name this script `4.arithmetic.3.sh`.
+  specified also? E.g. if I ran `./random.sh 10 45` it would only return random numbers between 10
+  and 45. Name this script `4.arithmetic.3.sh`.
 
 ### Activities for `5. If Statements`
 
-* Create a script named `5.if.1.sh` which will take 2 numbers as command line arguments. It will
-  print to the screen the larger of the two numbers.
-* Create a script named `5.if.2.sh` which will accept a file as a command line argument and check if
-  the file is executable or writable. You should print a message with true/false for each. For
-  example, if the file is both executable and writable, the message should be `true, true`. If the
-  file is executable but not writable, the message should be `true, false`.
+* Create a script named `5.if.1.sh` which takes 2 numbers as command line arguments. It should print
+  to the screen the larger of the two numbers.
+* Create a script named `5.if.2.sh` which accepts a file as a command line argument and check if the
+  file is executable or writable. You should print a message with true/false for each. For example,
+  if the file is both executable and writable, the message should be `true, true`. If the file is
+  executable but not writable, the message should be `true, false`. Make sure you have the exact
+  same capitalization and spacing as the examples.
 
 ### Activities for `6. Loops`
 
-* Create a script named `6.loops.1.sh` which will print the numbers 1 - 10 (each on a separate line)
-  and whether they are even or odd. The format should be `number, even/odd` e.g., `1, odd`.
-* Write a script named `6.loops.2.sh` which will take a single command line argument (a directory)
-  and will print each entry in that directory, each on a separate line. If the entry is a file it
-  will print its size (just the size, not the file name). If the entry is a directory it will print
-  how many items are in that directory (just how many items there are, not the directory name).
+* Create a script named `6.loops.1.sh` which prints the numbers 1 - 10 (each on a separate line) and
+  whether they are even or odd. The format should be `number, even/odd` e.g., `1, odd`.
+* Write a script named `6.loops.2.sh` which takes a single command line argument (a directory) and
+  prints each entry in that directory, each on a separate line. If the entry is a file it should
+  print its size (just the size, not the file name). If the entry is a directory it should print how
+  many items there are in that directory (just how many items there are, not the directory name).
 
 ### Submission
 
 Make sure you use git to push all the scripts you wrote and files/directories you created, including
 `.nvim/` and `.record/`, for grading.
+
+As with previous assignments, make sure you run `a2-checker` to check if your work is ready for
+grading. `a2-checker` performs the following.
+* It checks if you have correct recording files.
+* It checks if you have used `nvim` correctly.
+* It flags if you have copied and pasted anything.
+* It performs some basic checks to see if you followed the tutorial.
+* Note that if a check fails, it does not necessarily tell you why. You need to debug it by yourself
+  and find out.
+* This is not a grader but if the checker says that everything is good and if you are done following
+  the tutorial, you will get the full credit.
+* It is entirely *your responsibility* to run `a3-checker` before submitting your work. If you don't
+  do it, you may get an unexpected grade.
 
 # Next Steps
 
