@@ -119,6 +119,7 @@ C/C++ as well, as you will see in later assignments.
   prints each entry in that directory, each on a separate line. If the entry is a file it should
   print its size (just the size, not the file name). If the entry is a directory it should print how
   many items there are in that directory (just how many items there are, not the directory name).
+* Once everything is done, make sure you stop recording.
 
 ### Submission
 
