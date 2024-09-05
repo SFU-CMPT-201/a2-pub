@@ -56,10 +56,6 @@ C/C++ as well, as you will see in later assignments.
   many arguments there are and what the second argument is. The format of the output should be the
   number of arguments followed by a single space followed by the second argument. This *must* be
   your format. Otherwise, the grader will fail.
-* Create a script named `2.variables.3.sh` which takes a filename as its first argument and creates
-  a dated copy of the file. For example, if our file was named file1.txt it would create a copy
-  named 2023-08-02_file1.txt. (To achieve this you will probably want to play with command
-  substitution and the command `date`)
 * Create a script named `2.variables.2.sh` which prints a random word. There is a file containing a
   list of words (usually /usr/share/dict/words or /usr/dict/words). Print a random word from that
   file. A few hints:
